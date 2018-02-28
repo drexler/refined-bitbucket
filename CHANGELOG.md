@@ -1,3 +1,11 @@
+# Next Version
+
+### Features:
+
+* Insert badge with the number of commits of the current pull request next to the "Commits" tab,
+  closes [issue #163](https://github.com/refined-bitbucket/refined-bitbucket/issues/163),
+  [pull request #164](https://github.com/refined-bitbucket/refined-bitbucket/pull/164).
+
 # 3.7.2 (2018-02-28)
 
 ### Bug fixes:

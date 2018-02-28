@@ -3,13 +3,10 @@ import { ago } from 'time-ago';
 
 import getApiToken from '../get-api-token';
 import logger from '../logger';
-
 import { getRepoURL } from '../page-detect';
 
 import './augment-pr-entry.css';
 import linkifyTargetBranch from '../linkify-target-branch/linkify-target-branch';
-
-const repoUrl = getRepoURL();
 
 export const getPrData = async prId => {
     const repoUrl = getRepoURL();
