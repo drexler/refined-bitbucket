@@ -29,7 +29,8 @@ import {
     isPullRequestList,
     isCommit,
     isBranch,
-    isComparePage
+    isComparePage,
+    isSourceFilePage
 } from './page-detect';
 
 import 'selector-observer';
@@ -69,6 +70,10 @@ function init(config) {
     }
 
     if (config.improveFonts) {
+        require('./improve-fonts.css');
+    }
+
+    if (isSourceFilePage() && config.syntaxHighlight) {
         require('./improve-fonts.css');
     }
 

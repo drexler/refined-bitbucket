@@ -34,3 +34,6 @@ export const isEditPullRequestURL = () =>
 export const isCommit = () => getRepoPath().startsWith('commits/');
 
 export const isBranch = () => getRepoPath().startsWith('branch/');
+
+export const isSourceFilePage = () =>
+    /\\?at=[a-zA-Z0-9]*&fileviewer=file-view-default/.test(location);
